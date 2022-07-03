@@ -1,17 +1,74 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    margin: 0;
+}
 .child{
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+    height: 100%;
+    width: 100%;
     transition: all 0.9s ease;
 }
 .container{
-    min-width: 800px;
-    min-height: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
 }
 .row{
     display: flex;
+    flex: 1;
 }
 .child :hover{
     transform: 1.1;
     background-color: aqua;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    color: violet;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+.logo{
+    width: 50px;
+    height: auto;
+}
+.footer{
+    flex: 1;
+}
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }

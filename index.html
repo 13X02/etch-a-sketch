@@ -8,7 +8,31 @@
     <link href="style.css"rel="stylesheet">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="header">
+            <img src="images/logo.png"class="logo">
+            <div class="title">ETCH-A-SKETCH</div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <input type="color" class="wheel"value="#ff0000">
+                <button class="submit">Submit</button>
+                <button class="black">BLACK</button>
+                <button class="erase">ERASER</button>
+                <button class="rainbow">RAINBOW</button>
+                <div class="slidecontainer">
+                    <input type="range" min="4" max="64" value="50" class="slider" id="myRange">
+                    <div class="sliderval"></div>
+                </div>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="footer">
+            designed by
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
