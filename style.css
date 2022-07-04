@@ -4,27 +4,26 @@ html{
 }
 body{
     margin: 0;
+    background-color: #e2eafc;
 }
 .child{
     height: 100%;
     width: 100%;
-    transition: all 0.9s ease;
 }
 .container{
-    border: 1px solid black;
+    border: 5px solid gray;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 500px;
+    background-color: #f8f9fa;
 }
 .row{
     display: flex;
     flex: 1;
 }
-.child :hover{
-    transform: 1.1;
-    background-color: aqua;
-}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -33,42 +32,89 @@ body{
 }
 .header{
     display: flex;
-    background-color: antiquewhite;
+    background-color: #e2eafc;
     justify-content: space-around;
     align-items: center;
-    font-size: 30px;
-    color: violet;
+    font-size: 50px;
+    color: #abc4ff;
 }
 .content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 80px;
+    flex:1;
 }
 .logo{
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 70px;
 }
 .footer{
-    flex: 1;
+    margin: 0;
+    padding: 5px;
+    border-top: 1px solid antiquewhite;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
-  }
-  
-  /* The slider itself */
+    width: 200px;
+    height: 30px;
+    border: 2px solid #051428    ;
+    border-radius: 20px; 
+    padding: 0;
+    
+}
+.icon img{
+    width: 30px;
+    height: auto;
+}
+.social{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
   .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    width: 200px;
+    height: 5px;
+    border-radius: 20px; 
+    height: 100%; 
+    background: #abc4ff;
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
     transition: opacity .2s;
   }
   
-  /* Mouse-over effects */
   .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+    opacity: 1; 
   }
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+  }
+button{
+    padding: 10px;
+    width: 200px;
+    border-radius:15px ;
+    background-color: #abc4ff;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.wheel{
+    border-radius: 50px;
+}
+.right{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
